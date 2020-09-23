@@ -1,20 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
     <meta charset="UTF-8">
     <title style="text-align:center;font-family:Comic Sans MS;font-size:100px;">Owenbook</title>
 </head>
-<body style="backround-color:#ff0000;">
+<body style="background-color:#07FB85;">
+<div>
 <h1>
-   Owenbook's focus
+    <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">News</button>
+  <div class="dropdown-content">
+    <a href="#">Owen 1</a>
+    <a href="#">Owen 2</a>
+    <a href="#">Owen 3</a>
+  </div>
+</div>
+  <div class="dropdown">
+  <button class="dropbtn">Contact</button>
+  <div class="dropdown-content">
+    <a href="#">Zach</a>
+    <a href="#">Zach</a>
+    <a href="#">Also Zach</a>
+  </div>
+</div>
+  <div class="dropdown">
+  <button class="dropbtn">About</button>
+  <div class="dropdown-content">
+    <a href="#">Our Mission</a>
+    <a href="#">How you can help</a>
+    <a href="#">Why</a>
+  </div>
+</div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+  </a>
+        <h2 style="position:relative; left:500px;font-family:Comic Sans MS;color:white;">
+         Owenbook
+        </h2>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </h1>
-<p>
-    Owen is a very common name around the world 43,219 people in the US share the first name
+</div>
+ <h2>
+<div class="row">
+  <div class="column">
+  <h2>Our Mission</h2>
+  <p style="font-size:30px;"> Owen is a very common name around the world 43,219 people in the US share the first name
     owen making it the 897th most common name. However what do we really know about these people?
     What do they do, what do they eat, what do they like. it is our main focus at Owenbook Teams
     to connect these people in a way that lets us understand who they are. Owen Aaberg for example,
     is a stunning case of someone who has this name and has hobbies just look at this blender animation
-    he made in his free time quite intriguing...
+    he made in his free time quite intriguing...</p>
+  </div>
+</div>
+    </h2>>
+<p>
+caption
 <p>
 <img src="IMG_6369.PNG" height="500px" width="300px">
 </body>
